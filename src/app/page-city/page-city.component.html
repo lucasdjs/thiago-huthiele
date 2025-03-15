@@ -1,0 +1,41 @@
+<div class="container mt-4 city">
+    <h2 class="text-light">URUBICI</h2>
+  
+    <!-- Grid para telas grandes -->
+    <div class="row d-none d-md-flex">
+      <div *ngFor="let card of cards" class="col-md-4">
+        <div class="card text-light">
+          <img [src]="card.image" class="card-img-top" alt="Imagem">
+          <div class="card-body text-center">
+            <h5 class="card-title">{{ card.title }}</h5>
+            <p class="card-text">{{ card.text }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Carrossel para telas pequenas -->
+    <div id="carouselExampleIndicators" class="carousel slide d-md-none" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div *ngFor="let card of cards; let i = index" [ngClass]="{'carousel-item': true, 'active': i === 0}">
+          <div class="card text-light mx-auto" style="width: 90%;">
+            <img [src]="card.image" class="card-img-top" alt="Imagem">
+            <div class="card-body text-center">
+              <h5 class="card-title">{{ card.title }}</h5>
+              <p class="card-text">{{ card.text }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Controles do carrossel -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+    
+  </div>
+  

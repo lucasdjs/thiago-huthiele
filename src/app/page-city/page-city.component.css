@@ -1,0 +1,52 @@
+.card {
+    border: none;
+    width: 250px;
+    margin: 20px;
+    border-radius: 0px;
+    height: 100%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #38560e65;
+    box-shadow: 0px 10px 20px rgba(10, 41, 1, 0.319);
+  }
+  .card img {
+    height: 250px;
+    object-fit: cover;
+  }
+
+  h5{ 
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 3px;
+  
+  }
+
+  .city{
+    font-family: "Questrial", sans-serif;
+    font-size: 16px;
+    padding: 30px;
+  }
+
+  .card:hover {
+    transform: translateY(-5px); /* Move o card um pouco para cima */
+    box-shadow: 0px 10px 20px rgba(64, 64, 64, 0.678); /* Adiciona um efeito de sombra suave */
+  }
+
+  /* Ajusta o tamanho do carrossel no mobile */
+@media (max-width: 768px) {
+  .carousel-inner {
+    display: flex;
+    align-items: center;
+  }
+
+  .carousel-item {
+    text-align: center;
+  }
+
+  .card {
+    width: 100%;
+    height: 100%;
+    background-color: #38560e65;
+  }
+}
+  

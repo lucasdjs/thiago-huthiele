@@ -1,0 +1,57 @@
+.footer-container {
+    font-family: "Questrial", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 24px;
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Alinha verticalmente no centro */
+    padding: 20px;
+    color: white;
+    flex-wrap: wrap; /* Permite que os itens se movam para a próxima linha, se necessário */
+  }
+  
+  .footer-column {
+    flex: 1 1 200px; /* Tamanho mínimo e flexibilidade para as colunas */
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza os itens dentro de cada coluna */
+    text-align: center; /* Centraliza o texto */
+  }
+  
+  .footer-column h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .footer-column p {
+    font-size: 18px;
+  }
+  
+  .logo img {
+    width: 150px;
+    height: 100px;
+    margin: 0 auto; /* Garante que a logo está centralizada */
+  }
+  
+  .social-icons a {
+    margin-right: 10px;
+    color: white;
+    font-size: 24px;
+    transition: opacity 0.3s ease;
+  }
+  
+  .social-icons a:hover {
+    opacity: 0.7;
+  }
+  
+  .social-icons img {
+    width: 30px;
+    height: 30px;
+  }
+  
+  .social-icons a:hover img {
+    opacity: 0.7;
+  }
+  

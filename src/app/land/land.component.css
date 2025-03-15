@@ -1,0 +1,44 @@
+.banner-container {
+    position: relative;
+    background-image: linear-gradient(rgba(22, 30, 11, 0.6), rgba(22, 30, 11, 0.6)), url('second-banner.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    font-weight: 900;
+    font-family: "Questrial", sans-serif;
+    letter-spacing: 10px;
+    margin-top: 80px;
+    font-family: "Questrial", sans-serif;
+  }
+
+  .banner-overlay {
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  .btn-contact {
+    background-color: #355705;
+    color: white;
+    border: none;
+    padding: 20px 30px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+
+  .btn-contact:hover {
+    background-color: #2c3e30;
+  }
+
+  @media (max-width: 768px) {
+    .banner-container {
+        font-size: 14px; /* Ajusta o tamanho da fonte para 14px */
+        letter-spacing: 5px; /* Reduz o espaçamento entre as letras */
+    }
+}
